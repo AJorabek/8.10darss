@@ -4,9 +4,9 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const Board = () => {
   const [lists, setLists] = useState([
-    { id: '1', title: 'To Do', cards: [] },
-    { id: '2', title: 'In Progress', cards: [] },
-    { id: '3', title: 'Done', cards: [] },
+    { id: '1', title: 'Do', cards: [] },
+    { id: '2', title: 'doing', cards: [] },
+    { id: '3', title: 'finish', cards: [] },
   ]);
   const [cardTitle, setCardTitle] = useState(null)
   const handleChange = (event) => {
