@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
 const Board = () => {
   const [lists, setLists] = useState([
-    { id: '1', title: 'Do', cards: [] },
+    { id: '1', title: 'do', cards: [] },
     { id: '2', title: 'doing', cards: [] },
     { id: '3', title: 'finish', cards: [] },
   ]);
@@ -14,11 +14,11 @@ const Board = () => {
   }
   const validate = () => {
     if (!cardTitle){
-      alert("You must to enter word")
+      alert("enter word")
       return false
     }
     if (cardTitle.trim().length <= 3) {
-      alert("word must be more than 3 words")
+      alert("enter more than 3 words")
       return false
     }
     return true
